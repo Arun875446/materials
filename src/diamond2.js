@@ -209,17 +209,6 @@ sphereTweaks
   .min(0)
   .max(1)
   .step(0.0001);
-// sphereTweaks
-//   .add(materialTransparentSphere, "roughness")
-//   .min(0)
-//   .max(1)
-//   .step(0.0001)
-//   .name("roughness");
-// sphereTweaks
-//   .add(materialTransparentSphere, "metalness")
-//   .min(0)
-//   .max(1)
-//   .step(0.0001);
 
 const clock = new THREE.Clock();
 const tick = () => {
