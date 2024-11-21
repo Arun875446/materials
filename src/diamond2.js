@@ -135,7 +135,7 @@ const sizes = {
 };
 
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 4;
+camera.position.z = 6.5;
 camera.lookAt(group.position);
 scene.add(camera);
 
