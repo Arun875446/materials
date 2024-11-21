@@ -135,7 +135,7 @@ const sizes = {
 };
 
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 2.7;
+camera.position.z = 4;
 camera.lookAt(group.position);
 scene.add(camera);
 
@@ -209,6 +209,17 @@ sphereTweaks
   .min(0)
   .max(1)
   .step(0.0001);
+// sphereTweaks
+//   .add(materialTransparentSphere, "roughness")
+//   .min(0)
+//   .max(1)
+//   .step(0.0001)
+//   .name("roughness");
+// sphereTweaks
+//   .add(materialTransparentSphere, "metalness")
+//   .min(0)
+//   .max(1)
+//   .step(0.0001);
 
 const clock = new THREE.Clock();
 const tick = () => {
