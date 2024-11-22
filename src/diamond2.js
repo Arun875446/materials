@@ -218,6 +218,9 @@ const tick = () => {
   sphere.rotation.y = elapsedTime * 2;
   sphere2.rotation.y = elapsedTime * 2;
 
+  camera.position.x = Math.sin(elapsedTime) * 4;
+  camera.position.z = -Math.cos(elapsedTime) * 3;
+
   controls.update();
   renderer.render(scene, camera);
   window.requestAnimationFrame(tick);
